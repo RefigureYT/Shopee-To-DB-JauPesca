@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "target": "ESNext", /** Target define para qual versão do JS o código será convertido. */
+        "module": "preserve", /** A opção 'module' deve ser definida como 'NodeNext' quando a opção 'moduleResolution' está definida como 'NodeNext'. */
+        "moduleResolution": "bundler", /** Define como o TS encontra seus arquivos seguindo as regras restritas do Node moderno. */
+        "strict": true, /** Ativa todas as checagens rigorosas de tipo básicas. */
+        "noImplicitAny": true, /** Proíbe o uso de 'any' quando o TS não consegue inferir o tipo automaticamente. */
+        "strictNullChecks": true, /** Obriga a tratar explicitamente valores que podem ser 'null' ou 'undefined'. */
+        "strictFunctionTypes": true, /** Garante que parâmetros de funções sejam validados com rigor extra. */
+        "strictPropertyInitialization": true, /** Exige que propriedades de classes sejam inicializadas obrigatoriamente. */
+        "strictBindCallApply": true, /** Valida os tipos usados em métodos como .call(), .bind() e .apply(). */
+        "noImplicitThis": true, /** Impede o uso de 'this' em contextos onde o tipo não é claro. */
+        "noImplicitReturns": true, /** Garante que todas as ramificações de uma função retornem algo. */
+        "noFallthroughCasesInSwitch": true, /** Evita esquecer o 'break' em estruturas switch-case. */
+        "alwaysStrict": true, /** Força o modo estrito do JavaScript ('use strict') em todos os arquivos. */
+        "esModuleInterop": true, /** Permite importar módulos CommonJS como se fossem ES Modules com segurança. */
+        "noUnusedLocals": true, /** Reporta erro para variáveis locais declaradas mas nunca utilizadas. */
+        "noUnusedParameters": true, /** Reporta erro para parâmetros de funções que não são usados. */
+        "noImplicitOverride": true, /** Exige a palavra-chave 'override' ao sobrescrever métodos de classes pai. */
+        "noPropertyAccessFromIndexSignature": true, /** Obriga o uso de colchetes obj['prop'] para acessar propriedades não mapeadas. */
+        "useUnknownInCatchVariables": true, /** Força o erro do bloco catch a ser do tipo 'unknown' em vez de 'any'. */
+        "forceConsistentCasingInFileNames": true, /** Evita bugs em sistemas que diferenciam maiúsculas de minúsculas nos arquivos. */
+        "isolatedModules": true, /** Garante compatibilidade com ferramentas de build modernas e rápidas. */
+        "noUncheckedIndexedAccess": true, /** [SEGURANÇA MÁXIMA] Trata acessos a arrays como possivelmente 'undefined'. */
+        "exactOptionalPropertyTypes": true, /** [SEGURANÇA MÁXIMA] Impede definir propriedades opcionais como 'undefined' manualmente. */
+        "verbatimModuleSyntax": true, /** [SEGURANÇA MÁXIMA] Exige sintaxe explícita para importação de tipos ('import type'). */
+        "noEmitOnError": true, /** Impede que o build termine se houver qualquer erro de tipagem. */
+
+        "rootDir": "src", /** Pasta raiz do seu código fonte. */
+        "outDir": "build", /** Pasta onde o código final compilado será salvo. */
+        "skipLibCheck": true /** Ignora checagem de tipos dentro da pasta node_modules para ganhar performance. */
+    },
+
+    "include": [ "src" ],
+    "exclude": [ "node_modules", "build"]
+}
